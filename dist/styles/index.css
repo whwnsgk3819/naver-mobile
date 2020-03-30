@@ -1,0 +1,1669 @@
+@import url(./reset.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nanum Gothic", sans-serif !important;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 0 1.667rem;
+}
+
+.header__wrap {
+	position: relative;
+	text-align: center;
+}
+
+.header__menu {
+	width: 1.917rem;
+	height: 1.417rem;
+	background-position: -354px -204px;
+	display: block;
+	overflow: hidden;
+	margin: 1.417rem 0rem 1.417rem 0.083rem;
+	background-image: url(../assets/images/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+}
+
+.header__logo {
+	width: 13.75rem;
+	margin-bottom: 2.667rem;
+}
+
+.header__search {
+	overflow: hidden;
+	width: 100%;
+	height: 4.667rem;
+	padding: 1.583rem;
+	background: white;
+	border: 0.083rem solid #0bde8b;
+	border-radius: 0.25rem;
+	color: #e0e6eb;
+	font-weight: 500;
+	font-size: 1.442rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.001rem;
+	text-align: left;
+}
+
+.header__icon {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 0.083rem;
+	width: 10.833rem;
+	height: 2.5rem;
+}
+
+.header__icon--mike {
+	width: 2rem;
+	height: 2.167rem;
+	background-position: -321px -99px;
+	background-image: url(../assets/images/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-left: 0.583rem;
+	margin-right: 1.167rem;
+	position: relative;
+	bottom: 0.583rem;
+}
+
+.header__icon--qr {
+	width: 2.083rem;
+	height: 2.167rem;
+	background-position: -321px -66px;
+	background-image: url(../assets/images/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-right: 1rem;
+	position: relative;
+	bottom: 0.583rem;
+}
+
+.header__icon--map {
+	width: 2rem;
+	height: 2.167rem;
+	background-position: -321px -33px;
+	background-image: url(../assets/images/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	bottom: 0.583rem;
+}
+
+.header__button {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 4.333rem;
+	height: 4.333rem;
+	background-position: -120px -29px;
+	display: inline-block;
+	overflow: hidden;
+	color: transparent;
+	vertical-align: middle;
+	opacity: 1;
+	transform: scale(1);
+	border-radius: 50%;
+	box-shadow: 0 0.333rem 1.667rem 0 rgba(23, 185, 157, 0.25);
+	position: absolute;
+	top: 378%;
+	left: 44%;
+	z-index: 1;
+	transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.header__button.on {
+	transform: scale(0);
+	opacity: 0;
+}
+
+.header__list {
+	padding-top: 1.583rem;
+	max-width: 36.667rem;
+	margin: 0 0.375rem;
+}
+
+.header__list:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.header__list-wrap {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.header__list-item {
+	width: 4.167rem;
+	height: 4.167rem;
+	padding: 0 0.5rem;
+	float: left;
+	position: relative;
+	margin-bottom: 0.583rem;
+	margin-left: 1rem;
+}
+
+.header__list-background {
+	background-image: url(../assets/images/sp_search_v191224.png);
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 4.167rem;
+	height: 4.167rem;
+	background-position: -177px -29px;
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+}
+
+.header__list-background--none {
+	width: 4.167rem;
+	height: 4.167rem;
+	position: relative;
+	margin: 0 auto;
+	margin-left: -0.5rem;
+	border-radius: 1.667rem;
+	background-image: linear-gradient(to top, #fafbfd, #f2f6fa);
+	text-align: center;
+}
+
+.header__list-img {
+	margin-left: 0.417rem;
+	margin-top: 0.917rem;
+	width: 2.333rem;
+	height: 55%;
+}
+
+.header__list-img--one {
+	background-position: center;
+	background-image: url(../assets/images/01.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__list-img--two {
+	background-position: center;
+	background-image: url(../assets/images/02.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__list-img--three {
+	background-position: center;
+	background-image: url(../assets/images/03.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__list-img--four {
+	background-position: center;
+	background-image: url(../assets/images/04.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__list-img--five {
+	background-position: center;
+	background-image: url(../assets/images/05.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__list-img--six {
+	background-position: center;
+	background-image: url(../assets/images/06.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__list-img--seven {
+	background-position: center;
+	background-image: url(../assets/images/07.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__list-bubble {
+	position: absolute;
+	top: 0.5rem;
+	right: 19%;
+	height: 1.25rem;
+	font-weight: 500;
+	font-size: 0.917rem;
+	line-height: 0.917rem;
+	padding: 0.167rem 0.333rem 0;
+	color: #43484b;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 0.833rem;
+	box-sizing: border-box;
+	box-shadow: 0 0.167rem 0.333rem 0 rgba(37, 66, 102, 0.06);
+	transform: translateX(50%);
+	z-index: 10;
+}
+
+.header__list-text {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: -0.058rem;
+	color: #676c6f;
+	display: inline-block;
+}
+
+.header__list-dots {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	height: 0.417rem;
+	margin-left: 0.167rem;
+	font-size: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.header__list-dot {
+	width: 0.417rem;
+	height: 0.417rem;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 0.25rem;
+	background-color: #d7dfe8;
+	margin-right: 0.25rem;
+}
+
+.game-banner {
+	margin-top: 4.083rem;
+	background: linear-gradient(180deg, #fff 0%, #edf4f9 100%);
+}
+
+.game__img {
+	width: 100%;
+}
+
+.corona-banner {
+	border-bottom: 0.833rem solid #eff3f7;
+}
+
+.corona__img {
+	width: 95%;
+}
+
+.weather {
+	padding: 0 1.667rem;
+	border-bottom: 0.833rem solid #eff3f7;
+}
+
+.weather__today {
+	position: relative;
+	margin-top: 2.333rem;
+	border-bottom: 0.083rem solid #f5f7fa;
+	margin-bottom: 1.583rem;
+	padding-bottom: 2rem;
+}
+
+.weather__today:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.weather__today-sunborder {
+	background-image: url(../assets/images/weather.png);
+	background-size: 226px 217px;
+	background-repeat: no-repeat;
+	width: 2.667rem;
+	height: 2.667rem;
+	background-position: 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: rotation;
+}
+
+.weather__today-sun {
+	background-image: url(../assets/images/weather.png);
+	background-size: 226px 217px;
+	background-repeat: no-repeat;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-position: 0 -164px;
+	position: absolute;
+	top: 0.583rem;
+	left: 0.583rem;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: scale;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0.9);
+	}
+
+	20% {
+		transform: scale(0.8);
+	}
+
+	40% {
+		transform: scale(0.9);
+	}
+
+	60% {
+		transform: scale(0.9);
+	}
+
+	80% {
+		transform: scale(0.8);
+	}
+
+	100% {
+		transform: scale(0.9);
+	}
+}
+
+.weather__today-text {
+	margin-left: 3.5rem;
+	float: left;
+}
+
+.weather__today-text-temperature {
+	margin-right: 0.25rem;
+	vertical-align: top;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #43484b;
+}
+
+.weather__today-text-title {
+	font-weight: 500;
+	font-size: 1.25rem;
+	color: #43484b;
+	margin-bottom: 0.25rem;
+}
+
+.weather__today-text-content {
+	font-size: 1.167rem;
+	letter-spacing: -0.083rem;
+	color: #43484b;
+}
+
+.weather__today-finedust {
+	float: right;
+	width: 12.5rem;
+	margin-right: 0.5rem;
+}
+
+.weather__today-finedust:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.weather__today-dust {
+	float: left;
+	position: relative;
+	width: 40%;
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.083rem;
+	line-height: 1.333rem;
+	letter-spacing: -0.007rem;
+	color: #797b84;
+	margin-left: 0.833rem;
+}
+
+.weather__today-dust::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0.25rem;
+	left: -0.667rem;
+	width: 0.083rem;
+	height: 2.583rem;
+	background-color: rgba(208, 212, 222, 0.3);
+}
+
+.weather__today-dust-icon {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 1.833rem;
+	left: 0.583rem;
+	width: 1.083rem;
+	height: 1.083rem;
+	background-position: -415px -143px;
+}
+
+.weather__today-dust-icon--two {
+	background-position: -415px -107px;
+}
+
+.weather__today-dust-content {
+	margin-top: 0.417rem;
+	color: #00ce49;
+	font-size: 1.083rem;
+	letter-spacing: -0.004rem;
+	margin-left: 1.333rem;
+}
+
+.weather__today-dust-content--two {
+	color: #36a6f9;
+}
+
+.weather__location:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.weather__location-address {
+	float: left;
+}
+
+.weather__location-address:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.weather__location-address-text {
+	float: left;
+	padding-bottom: 2rem;
+	font-weight: 300;
+	font-size: 1.167rem;
+	letter-spacing: -0.004rem;
+	color: #686b73;
+	margin-right: 0.333rem;
+}
+
+.weather__location-address-icon {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.083rem;
+	height: 1.083rem;
+	background-position: -415px -251px;
+	float: left;
+	margin-top: 0.083rem;
+}
+
+.weather__location-content {
+	float: right;
+	width: 15rem;
+}
+
+.weather__location-content-text {
+	float: left;
+	font-weight: 300;
+	font-size: 1.083rem;
+	letter-spacing: -0.083rem;
+	color: #9a9ea1;
+}
+
+.weather__location-content-icon:before {
+	content: "";
+	display: inline-block;
+	width: 0.083rem;
+	height: 0.833rem;
+	margin: 0 0.667rem;
+	background-color: rgba(125, 135, 156, 0.16);
+}
+
+.weather__location-content-icon {
+	font-weight: 700;
+	font-size: 1.083rem;
+	letter-spacing: -0.006rem;
+	color: #797b84;
+}
+
+.weather__location-content-icon:after {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	content: "";
+	display: inline-block;
+	width: 0.417rem;
+	height: 0.75rem;
+	background-position: -382px -214px;
+	margin: 0px 0px -0.083rem 0.417rem;
+}
+
+.naver__banner {
+	padding: 1.667rem 1.667rem;
+	border-bottom: 0.833rem solid #eff3f7;
+}
+
+.naver__banner:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.naver__banner-app {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	content: "";
+	width: 3rem;
+	height: 3rem;
+	background-position: -39px -232px;
+	margin-right: 0.917rem;
+	float: left;
+}
+
+.naver__banner-text {
+	float: left;
+	font-weight: 300;
+	font-size: 1.167rem;
+	line-height: 1.5rem;
+	letter-spacing: -0.003rem;
+	color: #363b41;
+	width: 55%;
+}
+
+.naver__banner-text-bold {
+	font-weight: 700;
+}
+
+.naver__banner-text--change {
+	display: none;
+	float: left;
+	font-weight: 300;
+	font-size: 1.167rem;
+	line-height: 1.5rem;
+	letter-spacing: -0.003rem;
+	color: #363b41;
+	width: 55%;
+}
+
+.naver__banner-box {
+	width: 7.083rem;
+	height: 2.667rem;
+	line-height: 2.667rem;
+	float: right;
+	border: 0.083rem solid #4e99e0;
+	color: #4e99e0;
+	font-size: 1.083rem;
+	text-align: center;
+}
+
+.securities {
+	padding: 0 1.667rem;
+}
+
+.securities__title:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+
+.securities__title-text {
+	padding: 1.5rem 0;
+	font-size: 1.417rem;
+	font-weight: 600;
+	letter-spacing: -0.006rem;
+	color: #363b41;
+	float: left;
+}
+
+.securities__title-button {
+	float: right;
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.167rem;
+	height: 0.667rem;
+	background-position: -188px -251px;
+	margin-top: 1.5rem;
+}
+
+.securities__title-button.on {
+	transform: rotate(180deg);
+}
+
+.securities__screen-wrap {
+	padding-top: 4.417rem;
+	display: block;
+}
+
+.securities__screen-wrap.on {
+	display: none;
+}
+
+.securities__screen {
+	width: 100%;
+	height: 8.333rem;
+}
+
+.securities__screen-left {
+	border: 0.083rem solid #ebedf3;
+	background-color: #fff;
+	border-radius: 0.333rem;
+	position: relative;
+	height: 8.75rem;
+	width: 48.7%;
+	float: left;
+}
+
+.securities__screen-right {
+	border: 0.083rem solid #ebedf3;
+	background-color: #fff;
+	border-radius: 0.333rem;
+	position: relative;
+	height: 8.75rem;
+	width: 48.7%;
+	float: right;
+}
+
+.securities__screen-country {
+	padding: 0.833rem 0.833rem;
+	font-size: 1.167rem;
+	font-weight: 400;
+	line-height: 1.333rem;
+	color: #fff;
+	background-color: #db6c6c;
+	border-radius: 0.333rem;
+}
+
+.securities__screen-national-flag {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-position: -116px -335px;
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0.917rem;
+	right: 0.75rem;
+}
+
+.securities__screen-national-flag--Germany {
+	background-position: -93px -335px;
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+}
+
+.securities__screen-rate {
+	padding: 1.083rem 0 0.583rem 1.25rem;
+	font-size: 1.667rem;
+	color: #43484b;
+	font-weight: 600;
+}
+
+.securities__screen-rate-adding {
+	color: #f27272;
+	font-size: 0.917rem;
+	font-weight: 400;
+	padding-left: 1.083rem;
+}
+
+.securities__search {
+	margin: 2.083rem 0 0.417rem;
+}
+
+.securities__search:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.securities__search-text {
+	font-size: 1.167rem;
+	letter-spacing: -0.004rem;
+	color: #797b84;
+	font-weight: 500;
+	float: left;
+	margin-right: 0.25rem;
+}
+
+.securities__search-icon {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 0.667rem;
+	height: 1rem;
+	background-position: -433px -103px;
+	float: left;
+	margin-top: 0.083rem;
+}
+
+.securities__search-refresh {
+	float: right;
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 2.167rem;
+	height: 2.167rem;
+	background-position: -321px -198px;
+	margin-bottom: 0.833rem;
+	position: relative;
+	bottom: 0.333rem;
+}
+
+.securities__company-wrap {
+	padding: 0px 0px 0.833rem 0px;
+	border-bottom: 0.083rem solid #f5f7fa;
+	margin: 0.833rem 0px 0.833rem;
+	position: relative;
+}
+
+.securities__company-wrap--top {
+	margin: 0rem 0 1.25rem;
+}
+
+.securities__company-wrap:after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.securities__company-wrap--none {
+	padding: 0.417rem 0px 0.833rem 0px;
+}
+
+.securities__company-name {
+	width: 30%;
+	font-size: 1.25rem;
+	letter-spacing: -0.003rem;
+	color: #43484b;
+	float: left;
+	font-weight: 500;
+}
+
+.securities__company-figure {
+	width: 28%;
+	text-align: right;
+	font-size: 1.417rem;
+	color: #43484b;
+	float: left;
+	font-weight: 600;
+	margin-right: 9%;
+}
+
+.securities__company-rate {
+	float: left;
+	color: #587cd8;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.securities__company-rate-adding {
+	background-color: #6071c0;
+	width: 4.333rem;
+	line-height: 1.833rem;
+	border-radius: 0.167rem;
+	font-size: 0.917rem;
+	text-align: center;
+	color: #fff;
+	font-weight: 400;
+	float: right;
+	position: relative;
+	bottom: 0.417rem;
+}
+
+.securities__company-rate-icon {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 0.667rem;
+	height: 0.75rem;
+	background-position: -433px -321px;
+	position: absolute;
+	top: 0.25rem;
+	right: 27.5%;
+}
+
+.securities__company-rate--position {
+	margin-left: 1.833rem;
+}
+
+.securities__company-rate--color {
+	color: #db6b6b;
+}
+
+.securities__company-rate-adding--color {
+	background-color: #db6b6b;
+}
+
+.securities__besides {
+	background-color: #f9fafc;
+	width: 100%;
+	height: 4.167rem;
+}
+
+.securities__besides.on {
+	display: none;
+}
+
+.securities__besides-item {
+	margin-left: 2.5rem;
+	float: left;
+	margin-right: 4.8%;
+}
+
+.securities__besides-item--none {
+	float: left;
+}
+
+.securities__besides-icon {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.083rem;
+	height: 1.083rem;
+	background-position: -415px -179px;
+	float: left;
+	position: relative;
+	top: 1.417rem;
+	margin-right: -0.5rem;
+}
+
+.securities__besides-text {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.167rem;
+	line-height: 3.667rem;
+	letter-spacing: -0.083rem;
+	color: #797b84;
+	width: 6.667rem;
+}
+
+.securities__besides-icon--two {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.083rem;
+	height: 0.917rem;
+	background-position: -326px -380px;
+}
+
+.securities__besides-icon--three {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.083rem;
+	height: 1rem;
+	background-position: -239px -380px;
+}
+
+.securities__besides-text--none {
+	width: 5.833rem;
+}
+
+.webtoon {
+	padding: 0 1.667rem;
+	border-top: 0.833rem solid #eff3f7;
+}
+
+.webtoon__title:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+
+.webtoon__title-text {
+	padding: 1.5rem 0;
+	font-size: 1.417rem;
+	font-weight: 600;
+	letter-spacing: -0.006rem;
+	color: #363b41;
+	float: left;
+}
+
+.webtoon__title-button {
+	float: right;
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.167rem;
+	height: 0.667rem;
+	background-position: -188px -251px;
+	margin-top: 1.5rem;
+}
+
+.webtoon__title-button.on {
+	transform: rotate(180deg);
+}
+
+.webtoon__wrap {
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+.webtoon__wrap.on {
+	display: none;
+}
+
+.webtoon__wrap:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.webtoon__list {
+	display: inline-block;
+	margin-right: 0.25rem;
+}
+
+.webtoon__list_item {
+	display: block;
+	position: relative;
+	width: 11.917rem;
+}
+
+.webtoon__list-imgbox {
+	margin-bottom: 0.667rem;
+}
+
+.webtoon__list-img {
+	margin: 0.167rem 0 0.083rem 0.167rem;
+	min-height: 7.333rem;
+	width: 11.667rem;
+	height: 7.333rem;
+}
+
+.webtoon__list-img-bg {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 11.917rem;
+	height: 7.667rem;
+	background-size: cover;
+	background-image: url(../assets/images/bg_webtoon_b.png);
+}
+
+.webtoon__list-img-bg--rotate {
+	transform: rotate(180deg);
+}
+
+.webtoon__list-img-up {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 2.083rem;
+	height: 1.417rem;
+	background-position: -44px -312px;
+	position: absolute;
+	top: 0.083rem;
+	left: 0.5rem;
+}
+
+.webtoon__list-img-up--position {
+	margin-left: 0.667rem;
+}
+
+.webtoon__list-textbox::after {
+	display: block;
+	clear: both;
+	content: " ";
+}
+
+.webtoon__list-title {
+	font-weight: 600;
+	line-height: 1.5rem;
+	letter-spacing: -0.006rem;
+	color: #43484b;
+	font-size: 1.333rem;
+	margin-bottom: 0.333rem;
+}
+
+.webtoon__list-several {
+	font-size: 1.167rem;
+	font-weight: 400;
+	line-height: 1.333rem;
+	letter-spacing: -0.006rem;
+	color: #797b84;
+	float: left;
+	margin-bottom: 0.25rem;
+}
+
+.webtoon__list-score {
+	position: relative;
+	margin-top: 0.083rem;
+	font-size: 1.083rem;
+	letter-spacing: 0;
+	color: #ff4009;
+	float: left;
+}
+
+.webtoon__list-score:after {
+	width: 0.083rem;
+	height: 0.833rem;
+	content: "";
+	display: block;
+	float: left;
+	margin: 0.333rem 0.417rem 0;
+	background-color: rgba(121, 123, 132, 0.15);
+}
+
+.webtoon__list-author {
+	width: 6.667rem;
+	font-size: 1.167rem;
+	font-weight: 400;
+	line-height: 1.333rem;
+	letter-spacing: -0.006rem;
+	color: #797b84;
+	text-align: left;
+	clear: both;
+}
+
+.webtoon__popular {
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	bottom: 3.333rem;
+	padding: 1.25rem;
+}
+
+.webtoon__popular-button {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	width: 3.833rem;
+	height: 3.833rem;
+	background-position: -104px -93px;
+	margin: 0 auto 0.333rem;
+}
+
+.webtoon__popular-title {
+	margin-bottom: 0.333rem;
+	color: #43484b;
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.333rem;
+	letter-spacing: -0.006rem;
+}
+
+.webtoon__popular-content {
+	color: #797b84;
+	font-size: 1.167rem;
+	font-weight: 400;
+	line-height: 1.333rem;
+	letter-spacing: -0.006rem;
+}
+
+.webtoon__besides {
+	background-color: #f9fafc;
+	width: 100%;
+	height: 4.167rem;
+}
+
+.webtoon__besides.on {
+	display: none;
+}
+
+.webtoon__besides-item {
+	margin-left: 2.5rem;
+	float: left;
+	margin-right: 1.25rem;
+}
+
+.webtoon__besides-icon {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.25rem;
+	height: 1.333rem;
+	background-position: -20px -380px;
+	float: left;
+	position: relative;
+	top: 1.208rem;
+	margin-right: -0.667rem;
+}
+
+.webtoon__besides-text {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.167rem;
+	line-height: 3.667rem;
+	letter-spacing: -0.083rem;
+	color: #797b84;
+	width: 6.667rem;
+}
+
+.webtoon__besides-icon--two {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.25rem;
+	height: 1.333rem;
+	background-position: -215px -210px;
+}
+
+.webtoon__besides-icon--three {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 1.25rem;
+	height: 1.333rem;
+	background-position: 0 -380px;
+}
+
+.securities__besides-text--none {
+	width: 5.833rem;
+}
+
+.pan {
+	border-top: 0.833rem solid #eff3f7;
+	padding: 0 1.667rem 9.667rem 1.667rem;
+}
+
+.pan__title:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+
+.pan__title-text {
+	padding: 1.5rem 0;
+	font-size: 1.417rem;
+	font-weight: 600;
+	letter-spacing: -0.006rem;
+	color: #363b41;
+	float: left;
+}
+
+.pan__title-button {
+	float: right;
+	font-size: 1.167rem;
+	font-weight: 300;
+	line-height: 1.667rem;
+	letter-spacing: -0.007rem;
+	color: #7d818b;
+	padding: 1.333rem 0;
+}
+
+.pan__box {
+	float: left;
+	width: 49%;
+	position: relative;
+	background-color: #f6f7f9;
+	border-radius: 0.167rem;
+	padding: 0.417rem 1rem 0.417rem 0.667rem;
+	margin: 0 2% 0.417rem 0;
+}
+
+.pan__box--none {
+	margin: 0 0 0.417rem 0;
+}
+
+.pna__img {
+	width: 2.833rem;
+	float: left;
+}
+
+.pan__text {
+	float: left;
+	font-size: 1.25rem;
+	line-height: 2.833rem;
+	font-weight: 300;
+	letter-spacing: -0.083rem;
+	color: #666;
+}
+
+.pan__arrow {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 37%;
+	right: 1rem;
+	width: 0.667rem;
+	height: 1rem;
+	background-position: -433px -103px;
+}
+
+.content {
+	background-color: #f2f5f7;
+}
+
+.content__wrap {
+	padding: 4.167rem 0;
+	text-align: center;
+}
+
+.content__box {
+	margin-bottom: 0.833rem;
+}
+
+.content__text {
+	display: inline-block;
+	padding: 0 0.667rem;
+	font-weight: 300;
+	font-size: 1.083rem;
+	letter-spacing: -0.004rem;
+	color: #868b96;
+	position: relative;
+}
+
+.content__text--before:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0.167rem;
+	left: -0.083rem;
+	width: 0.083rem;
+	height: 0.833rem;
+	background-color: #dbe0e8;
+}
+
+.content__text-bold {
+	font-weight: 600;
+}
+
+.content__logo {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 6.167rem;
+	height: 1.167rem;
+	background-position: -123px -232px;
+	margin: 1.25rem auto 0;
+}
+
+.banner {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 11;
+	transition: all 0.1s linear;
+}
+
+.banner__top {
+	width: 100%;
+	background-color: white;
+	position: relative;
+	transition: all 0.1s linear;
+	opacity: 0;
+	z-index: 7;
+}
+
+.banner__top.on {
+	transform: scale(1);
+	opacity: 1;
+	animation-delay: 2s;
+}
+
+.banner__top:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.banner__top-logo {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	transition: 0.3s 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+	width: 2rem;
+	height: 1.833rem;
+	background-position: -278px -249px;
+	margin: 1.583rem 2.5rem 1.583rem 1.25rem;
+	float: left;
+	transform: scale(0);
+	opacity: 0;
+	animation-delay: 2s;
+}
+
+.banner__top-logo.on {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.banner__top-search {
+	font-size: 1.417rem;
+	font-weight: 500;
+	letter-spacing: -0.003rem;
+	color: #c7cad1;
+	padding: 1.833rem 0 1.333rem 1.167rem;
+	text-align: left;
+}
+
+.banner__top-search:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	width: 0.083rem;
+	height: 1.833rem;
+	margin-top: -0.917rem;
+	background-color: #eceff3;
+}
+
+.banner__top-icon-wrap {
+	position: absolute;
+	top: 1.333rem;
+	right: 0.833rem;
+}
+
+.banner__top-icon {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 2.333rem;
+	height: 2.333rem;
+	background-position: -321px -99px;
+	float: left;
+	margin-right: 0.917rem;
+}
+
+.banner__top-icon--two {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 2.333rem;
+	height: 2.333rem;
+	background-position: -321px -66px;
+}
+
+.banner__top-icon--three {
+	background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png);
+	background-size: 443px 413px;
+	background-repeat: no-repeat;
+	width: 2.333rem;
+	height: 2.333rem;
+	background-position: -321px -33px;
+}
+
+.banner__bottom {
+	width: 100%;
+	background-color: #00bf5f;
+	position: relative;
+	opacity: 0;
+	transition: all 0.3s;
+	top: -6.167rem;
+	z-index: 5;
+}
+
+.banner__bottom.on {
+	animation-delay: 5s;
+	opacity: 1;
+	top: 0px;
+	z-index: 5;
+}
+
+.banner__bottom-text-wrap {
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+.banner__bottom-text {
+	display: inline-block;
+	margin: 0 0.333rem 0 0.25rem;
+	padding: 1.417rem 0.333rem;
+	color: #a1e6c3;
+	font-size: 1.25rem;
+}
+
+.banner__bottom-text--bold {
+	color: white;
+	border-bottom: 0.25rem solid #bfefd7;
+}
+
+@media screen and (min-width: 1441px) {
+
+	html,
+	body {
+		font-size: 14px;
+	}
+
+	.header__list-item {
+		margin: 0px 1.75rem 0.583rem 26%;
+	}
+
+	.header__list-img {
+		margin-left: 2px;
+		margin-top: 10px;
+		width: 2.333rem;
+		height: 55%;
+	}
+
+	.securities__besides-item {
+		margin-left: 8%;
+		margin-right: 6.8%;
+	}
+
+	.webtoon__besides-item {
+		margin-left: 8%;
+		margin-right: 6%;
+	}
+
+	.header__button {
+		display: none;
+	}
+
+	.content__logo {
+		width: 5.167rem;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+	html,
+	body {
+		font-size: 14px;
+	}
+
+	.header__list-item {
+		margin: 0px 1.75rem 0.583rem 26%;
+	}
+
+	.header__list-img {
+		margin-left: 2px;
+		margin-top: 10px;
+		width: 2.333rem;
+		height: 55%;
+	}
+
+	.securities__besides-item {
+		margin-left: 8%;
+		margin-right: 6.8%;
+	}
+
+	.webtoon__besides-item {
+		margin-left: 8%;
+		margin-right: 6%;
+	}
+
+	.header__button {
+		display: none;
+	}
+
+	.content__logo {
+		width: 5.167rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+	html,
+	body {
+		font-size: 14px;
+	}
+
+	.header__list-item {
+		margin: 0px 1.75rem 0.583rem 26%;
+	}
+
+	.header__list-img {
+		margin-left: 2px;
+		margin-top: 10px;
+		width: 2.333rem;
+		height: 55%;
+	}
+
+	.securities__besides-item {
+		margin-left: 8%;
+		margin-right: 6.8%;
+	}
+
+	.webtoon__besides-item {
+		margin-left: 8%;
+		margin-right: 6%;
+	}
+
+	.header__button {
+		display: none;
+	}
+
+	.content__logo {
+		width: 5.167rem;
+	}
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+
+	html,
+	body {
+		font-size: 12px;
+	}
+
+	.header__list-item {
+		margin: 0px 1.75rem 0.583rem 1.75rem;
+	}
+
+	.securities__besides-item {
+		margin-left: 8%;
+		margin-right: 6.8%;
+	}
+
+	.webtoon__besides-item {
+		margin-left: 8%;
+		margin-right: 6%;
+	}
+
+	.naver__banner-text {
+		width: 57%;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 413px) {
+
+	html,
+	body {
+		font-size: 12px;
+	}
+
+	.header__list-item {
+		margin: 0px 1.333rem 0.583rem 1.333rem;
+	}
+
+	.header__button {
+
+		top: 360%;
+	}
+
+	.securities__besides-item {
+		margin-right: 2.8%;
+	}
+
+	.webtoon__besides-item {
+		margin-right: 0.8rem;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+
+	html,
+	body {
+		font-size: 12px;
+	}
+
+	.header__list-item {
+		margin: 0px 0.833rem 0.583rem 0.833rem;
+	}
+
+	.header__list {
+		margin: 0 3px;
+	}
+
+	.header__button {
+
+		top: 310%;
+	}
+
+	.weather__today-finedust {
+		width: 11.5rem;
+		margin-right: -1.5rem;
+	}
+
+	.securities__company-figure {
+		margin-right: 4%;
+	}
+
+	.securities__company-rate-icon {
+		right: 30.5%;
+	}
+
+	.securities__company-name {
+		width: 31%;
+	}
+
+	.securities__besides-item {
+		margin-right: -2.2%;
+	}
+
+	.webtoon__besides-item {
+		margin-right: -1rem;
+	}
+
+	.naver__banner-text {
+		display: none;
+	}
+
+	.naver__banner-text--change {
+		display: block;
+		width: 42%;
+	}
+
+	.header__icon {
+		display: none;
+	}
+
+	.banner__top-icon {
+		display: none;
+	}
+}

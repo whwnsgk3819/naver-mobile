@@ -1,0 +1,576 @@
+<% include ./inc/header.ejs %>
+<div class="container">
+  <!-- header 시작-->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__menu"></div>
+      <img
+        class="header__logo"
+        src="./assets/images/img_logo_main_home.png"
+        alt=""
+      />
+      <div class="header__search">검색어를 입력해주세요.</div>
+      <div class="header__icon">
+        <div class="header__icon--mike"></div>
+        <div class="header__icon--qr"></div>
+        <div class="header__icon--map"></div>
+      </div>
+      <div class="header__button"></div>
+    </div>
+    <div class="header__list">
+      <div class="header__list-wrap">
+        <div class="header__list-item">
+          <div class="header__list-background"></div>
+          <div class="header__list-img header__list-img--one"></div>
+        </div>
+        <div class="header__list-text">뉴스판</div>
+      </div>
+      <div class="header__list-wrap">
+        <div class="header__list-item">
+          <div class="header__list-background"></div>
+          <div class="header__list-img header__list-img--two"></div>
+        </div>
+        <div class="header__list-text">검색차트판</div>
+      </div>
+      <div class="header__list-wrap">
+        <div class="header__list-item">
+          <div class="header__list-background"></div>
+          <div class="header__list-img header__list-img--three"></div>
+        </div>
+        <div class="header__list-text">스포츠판</div>
+      </div>
+      <div class="header__list-wrap header__list-wrap--none">
+        <div class="header__list-item">
+          <div class="header__list-background"></div>
+          <div class="header__list-img header__list-img--four"></div>
+        </div>
+        <div class="header__list-text">트렌드판</div>
+      </div>
+    </div>
+    <div class="header__list">
+      <div class="header__list-wrap">
+        <div class="header__list-item">
+          <div class="header__list-background"></div>
+          <div class="header__list-img header__list-img--five"></div>
+          <div class="header__list-bubble">99+</div>
+        </div>
+        <div class="header__list-text">메일</div>
+      </div>
+      <div class="header__list-wrap">
+        <div class="header__list-item">
+          <div class="header__list-background"></div>
+          <div class="header__list-img header__list-img--six"></div>
+        </div>
+        <div class="header__list-text">카페</div>
+      </div>
+      <div class="header__list-wrap">
+        <div class="header__list-item">
+          <div class="header__list-background"></div>
+          <div class="header__list-img header__list-img--seven"></div>
+        </div>
+        <div class="header__list-text">블로그</div>
+      </div>
+      <div class="header__list-wrap header__list-wrap--none">
+        <div class="header__list-item">
+          <div class="header__list-background--none"></div>
+          <div class="header__list-dots">
+            <div class="header__list-dot"></div>
+            <div class="header__list-dot"></div>
+            <div class="header__list-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="game-banner">
+    <img class="game__img" src="./assets/images/game.png" alt="" />
+  </section>
+  <section class="corona-banner">
+    <img class="corona__img" src="./assets/images/corona.png" alt="" />
+  </section>
+  <section class="weather">
+    <div class="weather__today">
+      <div class="weather__today-sunborder"></div>
+      <div class="weather__today-sun"></div>
+      <div class="weather__today-text">
+        <div class="weather__today-text-title">
+          <span class="weather__today-text-temperature">7°</span>맑음
+        </div>
+        <div class="weather__today-text-content">어제보다 2° 낮아요</div>
+      </div>
+      <div class="weather__today-finedust">
+        <div class="weather__today-dust">
+          미세
+          <div class="weather__today-dust-icon"></div>
+          <div class="weather__today-dust-content">보통</div>
+        </div>
+        <div class="weather__today-dust">
+          초미세
+          <div
+            class="weather__today-dust-icon weather__today-dust-icon--two"
+          ></div>
+          <div
+            class="weather__today-dust-content weather__today-dust-content--two"
+          >
+            좋음
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weather__location">
+      <div class="weather__location-address">
+        <div class="weather__location-address-text">인천시 백령면</div>
+        <div class="weather__location-address-icon"></div>
+      </div>
+      <div class="weather__location-content">
+        <div class="weather__location-content-text">기상청,한국환경공단</div>
+        <div class="weather__location-content-icon">더보기</div>
+      </div>
+    </div>
+  </section>
+  <section class="corona__banner">
+    <img class="corona__img" src="./assets/images/corona2.png" alt="" />
+  </section>
+  <section class="naver__banner">
+    <div class="naver__banner-app"></div>
+    <div class="naver__banner-text">
+      앱으로
+      <span class="naver__banner-text-bold"> 새로운 네이버</span>를 더 쾌적하게
+      사용해보세요.
+    </div>
+    <div class="naver__banner-text--change">
+      앱으로
+      <span class="naver__banner-text-bold"> 새로운 네이버</span>를 더 쾌적하게
+      ...
+    </div>
+    <div class="naver__banner-box">앱 사용하기</div>
+  </section>
+  <section class="securities">
+    <div class="securities__title">
+      <div class="securities__title-text">증권</div>
+      <div class="securities__title-button"></div>
+      <div class="securities__screen-wrap">
+        <div class="securities__screen">
+          <div class="securities__screen-left">
+            <div class="securities__screen-country">러시아</div>
+            <div class="securities__screen-national-flag"></div>
+            <div class="securities__screen-rate">865.31</div>
+            <div class="securities__screen-rate-adding">▲ 33.05 +3.97%</div>
+          </div>
+          <div class="securities__screen-right">
+            <div class="securities__screen-country">독일</div>
+            <div
+              class="securities__screen-national-flag securities__screen-national-flag--Germany"
+            ></div>
+            <div class="securities__screen-rate">8,470.50</div>
+            <div class="securities__screen-rate-adding">▲ 28.79 +0.34%</div>
+          </div>
+        </div>
+        <div class="securities__search">
+          <div class="securities__search-text">인기검색</div>
+          <div class="securities__search-icon"></div>
+          <div class="securities__search-refresh"></div>
+        </div>
+        <div class="securities__company">
+          <div class="securities__company-wrap securities__company-wrap--top">
+            <div class="securities__company-name">삼성전자</div>
+            <div class="securities__company-figure">42,950</div>
+            <div class="securities__company-rate">▼2,650</div>
+            <div class="securities__company-rate-adding">-5.81%</div>
+          </div>
+          <div class="securities__company-wrap">
+            <div class="securities__company-name">아시아나항공</div>
+            <div class="securities__company-figure">2,270</div>
+            <div class="securities__company-rate-icon"></div>
+            <div
+              class="securities__company-rate securities__company-rate--position"
+            >
+              970
+            </div>
+            <div class="securities__company-rate-adding">-29.94%</div>
+          </div>
+          <div class="securities__company-wrap securities__company-wrap--none">
+            <div class="securities__company-name">씨젠</div>
+            <div class="securities__company-figure">67,200</div>
+            <div
+              class="securities__company-rate securities__company-rate--color"
+            >
+              ▲8,000
+            </div>
+            <div
+              class="securities__company-rate-adding securities__company-rate-adding--color"
+            >
+              +13.51%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="securities__besides">
+    <div class="securities__besides-item">
+      <div class="securities__besides-icon"></div>
+      <div class="securities__besides-text">종목 검색</div>
+    </div>
+    <div class="securities__besides-item">
+      <div class="securities__besides-icon securities__besides-icon--two"></div>
+      <div class="securities__besides-text">국내 증시</div>
+    </div>
+    <div class="securities__besides-item securities__besides-item--none">
+      <div
+        class="securities__besides-icon securities__besides-icon--three"
+      ></div>
+      <div class="securities__besides-text securities__besides-text--none">
+        증권 홈
+      </div>
+    </div>
+  </section>
+  <section class="webtoon">
+    <div class="webtoon__title">
+      <div class="webtoon__title-text">웹툰</div>
+      <div class="webtoon__title-button"></div>
+    </div>
+    <div class="webtoon__wrap">
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/01.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div class="webtoon__list-img-up"></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">외모지상주의</div>
+          <div class="webtoon__list-several">279화 호스...</div>
+          <div class="webtoon__list-score">★9.45</div>
+          <div class="webtoon__list-author">박태준</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/02.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg webtoon__list-img-bg--rotate"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div
+              class="webtoon__list-img-up webtoon__list-img-up--position"
+            ></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">이제 곧 죽습니다</div>
+          <div class="webtoon__list-several">49화</div>
+          <div class="webtoon__list-score">★9.60</div>
+          <div class="webtoon__list-author">이원식/꿀찬</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/03.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div class="webtoon__list-img-up"></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">스위트홈</div>
+          <div class="webtoon__list-several">126화</div>
+          <div class="webtoon__list-score">★9.98</div>
+          <div class="webtoon__list-author">김칸비/황영찬</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/04.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg webtoon__list-img-bg--rotate"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div
+              class="webtoon__list-img-up webtoon__list-img-up--position"
+            ></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">갓 오브 하이스쿨</div>
+          <div class="webtoon__list-several">454화</div>
+          <div class="webtoon__list-score">★9.67</div>
+          <div class="webtoon__list-author">박용제</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/05.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div class="webtoon__list-img-up"></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">재혼 황후</div>
+          <div class="webtoon__list-several">22화</div>
+          <div class="webtoon__list-score">★9.95</div>
+          <div class="webtoon__list-author">알파타르트/숨풀</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/06.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg webtoon__list-img-bg--rotate"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div
+              class="webtoon__list-img-up webtoon__list-img-up--position"
+            ></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">1초</div>
+          <div class="webtoon__list-several">53화</div>
+          <div class="webtoon__list-score">★9.98</div>
+          <div class="webtoon__list-author">시니/광운</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/07.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div class="webtoon__list-img-up"></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">화장 지워주는 남자</div>
+          <div class="webtoon__list-several">99화</div>
+          <div class="webtoon__list-score">★9.93</div>
+          <div class="webtoon__list-author">이연</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/08.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg webtoon__list-img-bg--rotate"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div
+              class="webtoon__list-img-up webtoon__list-img-up--position"
+            ></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">테러맨</div>
+          <div class="webtoon__list-several">시즌2 100화</div>
+          <div class="webtoon__list-score">★9.96</div>
+          <div class="webtoon__list-author">한동우/고진호</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/09.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div class="webtoon__list-img-up"></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">소심한 팔레트</div>
+          <div class="webtoon__list-several">33화</div>
+          <div class="webtoon__list-score">★9.97</div>
+          <div class="webtoon__list-author">한민기</div>
+        </div>
+      </div>
+      <div class="webtoon__list">
+        <div class="webtoon__list-imgbox">
+          <div class="webtoon__list_item">
+            <img
+              class="webtoon__list-img"
+              src="./assets/images/10.jpg"
+              alt=""
+            />
+            <img
+              class="webtoon__list-img-bg webtoon__list-img-bg--rotate"
+              src="./assets/images/bg_webtoon_b.png"
+              alt=""
+            />
+            <div
+              class="webtoon__list-img-up webtoon__list-img-up--position"
+            ></div>
+          </div>
+        </div>
+        <div class="webtoon__list-textbox">
+          <div class="webtoon__list-title">복학생 정순이</div>
+          <div class="webtoon__list-several">23화 변화</div>
+          <div class="webtoon__list-score">★9.95</div>
+          <div class="webtoon__list-author">한짜장</div>
+        </div>
+      </div>
+      <div class="webtoon__popular">
+        <div class="webtoon__popular-button"></div>
+        <div class="webtoon__popular-title">인기 웹툰</div>
+        <div class="webtoon__popular-content">더보기</div>
+      </div>
+    </div>
+  </section>
+  <section class="webtoon__besides">
+    <div class="webtoon__besides-item">
+      <div class="webtoon__besides-icon"></div>
+      <div class="webtoon__besides-text">웹툰 홈</div>
+    </div>
+    <div class="webtoon__besides-item">
+      <div class="webtoon__besides-icon webtoon__besides-icon--two"></div>
+      <div class="webtoon__besides-text">금요웹툰</div>
+    </div>
+    <div class="webtoon__besides-item">
+      <div class="webtoon__besides-icon webtoon__besides-icon--three"></div>
+      <div class="webtoon__besides-text webtoon__besides-text--none">
+        MY웹툰
+      </div>
+    </div>
+  </section>
+  <section class="pan">
+    <div class="pan__title">
+      <div class="pan__title-text">인기 주제 판을 확인해 보세요!</div>
+      <div class="pan__title-button">판관리</div>
+    </div>
+    <div class="pan__item">
+      <div class="pan__box">
+        <img class="pna__img" src="./assets/images/pan1.png" alt="" />
+        <div class="pan__text">뽐판</div>
+        <div class="pan__arrow"></div>
+      </div>
+      <div class="pan__box pan__box--none">
+        <img class="pna__img" src="./assets/images/pan2.png" alt="" />
+        <div class="pan__text">자동차판</div>
+        <div class="pan__arrow"></div>
+      </div>
+    </div>
+    <div class="pan__item">
+      <div class="pan__box">
+        <img class="pna__img" src="./assets/images/pan3.png" alt="" />
+        <div class="pan__text">경제M판</div>
+        <div class="pan__arrow"></div>
+      </div>
+      <div class="pan__box pan__box--none">
+        <img class="pna__img" src="./assets/images/pan4.png" alt="" />
+        <div class="pan__text">웹툰판</div>
+        <div class="pan__arrow"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="content">
+    <div class="content__wrap">
+      <div class="content__box">
+        <div class="content__text">로그인</div>
+        <div class="content__text content__text--before">전체서비스</div>
+        <div class="content__text content__text--before">PC버전</div>
+      </div>
+      <div class="content__box">
+        <div class="content__text">이용약관</div>
+        <div class="content__text content__text--before content__text-bold">
+          개인정보처리방침
+        </div>
+        <div class="content__text content__text--before">고객센터</div>
+        <div class="content__logo"></div>
+      </div>
+    </div>
+  </footer>
+  <div class="banner">
+    <div class="banner__wrap">
+      <div class="banner__top">
+        <div class="banner__top-logo"></div>
+        <div class="banner__top-search">검색어를 입력해주세요</div>
+        <div class="banner__top-icon-wrap">
+          <div class="banner__top-icon"></div>
+          <div class="banner__top-icon banner__top-icon--two"></div>
+          <div class="banner__top-icon banner__top-icon--three"></div>
+        </div>
+      </div>
+      <div class="banner__bottom">
+        <div class="banner__bottom-text-wrap">
+          <div class="banner__bottom-text">뭐하지</div>
+          <div class="banner__bottom-text">엔터</div>
+          <div class="banner__bottom-text">MY페이</div>
+          <div class="banner__bottom-text">셀렉티브</div>
+          <div class="banner__bottom-text">트렌드</div>
+          <div class="banner__bottom-text banner__bottom-text--bold">홈</div>
+          <div class="banner__bottom-text">뉴스</div>
+          <div class="banner__bottom-text">연예</div>
+          <div class="banner__bottom-text">스포츠</div>
+          <div class="banner__bottom-text">검색차트</div>
+          <div class="banner__bottom-text">쇼핑</div>
+          <div class="banner__bottom-text">MY구독</div>
+          <div class="banner__bottom-text">우리동네</div>
+          <div class="banner__bottom-text">푸드</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% include ./inc/footer.ejs %>
